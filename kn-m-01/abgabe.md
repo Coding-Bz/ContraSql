@@ -12,3 +12,7 @@ Admin ist der Name der DB in der die User Credentials gespeichert sind:
             { role: "readWriteAnyDatabase", db: "admin" }
           ]
         }
+
+
+# B)
+<img width="2550" height="1418" alt="image" src="https://github.com/user-attachments/assets/660215ac-0948-48d4-a7e1-a9e71e568216" />
