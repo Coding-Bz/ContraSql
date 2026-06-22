@@ -1,3 +1,6 @@
+# KN-M-03: Datenmanipulation und Abfragen I
+
+## A) Daten hinzufügen (25%)
 
 ```js
 
@@ -147,3 +150,140 @@ db.strategy_effect.insertMany([
 ])
 
 ```
+<img width="912" height="484" alt="image" src="https://github.com/user-attachments/assets/97c0717b-4b0b-49e5-b778-9e7caa1a3bcf" />
+
+## B) Daten löschen (25%)
+
+<img width="546" height="320" alt="image" src="https://github.com/user-attachments/assets/4b077aa4-2ce7-4c7f-b8cf-e2bffdf4ad87" />
+
+<img width="696" height="792" alt="image" src="https://github.com/user-attachments/assets/f4396220-3736-40c3-bd55-77ea201dd73f" />
+
+<img width="1216" height="1270" alt="image" src="https://github.com/user-attachments/assets/335d48fa-0451-4525-8975-f3b0bf929045" />
+
+
+## C) Daten abfragen (25%)
+
+```js
+db.country.find(
+  {
+    "$or": [
+      { "continent": "Europe" },
+      { "continent": "South America" }
+    ]
+  },
+  {
+    "_id": 0,
+    "name": 1,
+    "iso_code": 1,
+    "continent": 1,
+    "currency": 1
+  }
+)
+
+db.country.find(
+  {
+    "name": { "$regex": "an", "$options": "i" }
+  },
+  {
+    "_id": 1,
+    "name": 1,
+    "iso_code": 1
+  }
+)
+
+db.policy.find(
+  {
+    "$and": [
+      { "type": "Economic" },
+      { "name": { "$regex": "Labour", "$options": "i" } }
+    ]
+  },
+  {
+    "_id": 1,
+    "name": 1,
+    "type": 1,
+    "description": 1
+  }
+)
+
+db.strategy.find(
+  {
+    "start_year": { "$gte": new Date("2023-01-01") }
+  },
+  {
+    "_id": 0,
+    "name": 1,
+    "direction": 1,
+    "budget": 1,
+    "start_year": 1,
+    "end_year": 1
+  }
+)
+
+db.strategy_effect.find(
+  {
+    "impact": "Positive"
+  },
+  {
+    "_id": 1,
+    "indicator_type": 1,
+    "impact": 1,
+    "description": 1
+  }
+)
+```
+<img width="1358" height="652" alt="image" src="https://github.com/user-attachments/assets/04f80601-7c04-4f87-acc8-50666d9c8e16" />
+
+## D) Daten verändern (25%)
+
+```js
+load("A_insert.js")
+
+db.country.updateOne(
+  {
+    "_id": country[0]
+  },
+  {
+    "$set": {
+      "population": 84000000,
+      "stability.inflation": 2
+    }
+  }
+)
+
+db.strategy.updateMany(
+  {
+    "$or": [
+      { "direction": "Expansionary" },
+      { "direction": "Reformatory" }
+    ],
+    "budget": { "$lt": 10000000 }
+  },
+  {
+    "$set": {
+      "direction": "Moderate"
+    }
+  }
+)
+
+db.strategy_effect.replaceOne(
+  {
+    "indicator_type": "GDP Growth"
+  },
+  {
+    "_id": strategy_effect[3],
+    "strategy_id": strategy[3],
+    "indicator_type": "Employment Quality",
+    "impact": "Positive",
+    "description": "Improved job quality and higher wages due to labour market reforms."
+  }
+)
+
+db.country.find({ "name": "Germany" })
+db.strategy.find()
+db.strategy_effect.find()
+
+```
+<img width="1422" height="1006" alt="image" src="https://github.com/user-attachments/assets/e391a405-b291-4de2-8cbd-8adacd61257d" />
+
+
