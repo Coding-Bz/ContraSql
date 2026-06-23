@@ -1,5 +1,5 @@
 # KN-M-03: Datenmanipulation und Abfragen I
-
+---
 ## A) Daten hinzufügen (25%)
 
 ```js
