@@ -71,4 +71,12 @@ Screenshot für das Schreiben von Daten ohne Fehler.
 <img width="2280" height="702" alt="image" src="https://github.com/user-attachments/assets/516687f8-cdc0-47a6-be45-7e5d239d2b7b" />
 
 
+## C) Skalierung (20%)
+
+Kurz gesagt: Bei der Replikation kopiert man Daten für mehr Sicherheit und Verfügbarkeit. Beim Sharding (Partitionierung) zerlegt man Daten, um mehr Speicherplatz und Leistung zu erhalten.
+
+https://fizalihsan.github.io/technology/distributedcomputing.html
+<img width="426" height="456" alt="image" src="https://github.com/user-attachments/assets/b3286497-e2c1-4f0d-a612-8bf69a0f5a3d" />
+
+Da ich bei Google arbeite und die Daten Menge in Vergleich zu anderen Unternehmen viel grösser ist ist es nicht möglich eine durchschnittliche Kösung zu empfehlen und auserdem für all das hat Google aus Sicherheitsgründen eigene Dienste. Also meiner Meinung nach sollte dies auch so bleiben um die Daten so gut wie möglich zu beschützen.
 
