@@ -30,13 +30,12 @@ Screenshot für das Lesen von Daten ohne Fehler
 Screenshot für das Schreiben von Daten ohne Fehler.
 
 
-
 <img width="2500" height="1344" alt="image" src="https://github.com/user-attachments/assets/9f1f05bd-9f5a-484f-9333-2b75682c1cb4" />
 
 <img width="1968" height="1314" alt="image" src="https://github.com/user-attachments/assets/014cb172-7600-49f1-8ba2-bee68c23207f" />
 
-
 <img width="2172" height="1238" alt="image" src="https://github.com/user-attachments/assets/537ae178-a358-47eb-bdde-cd51e91c0152" />
+
 <img width="1508" height="206" alt="image" src="https://github.com/user-attachments/assets/04bb3b33-5626-4e0f-826e-2609153ef02f" />
 
 
