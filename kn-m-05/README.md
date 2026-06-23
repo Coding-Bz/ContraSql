@@ -2,19 +2,34 @@
 
 ## A) Rechte und Rollen (40%)
 
-### Ändern Sie den Verbindungstext und versuchen Sie als authSource eine andere Datenbank als admin anzugeben (aber eine existierende). Zeigen Sie so, dass der Zugriff nicht mehr funktioniert.
-
+#### Ändern Sie den Verbindungstext und versuchen Sie als authSource eine andere Datenbank als admin anzugeben (aber eine existierende). Zeigen Sie so, dass der Zugriff nicht mehr funktioniert.
+#### Screenshot des Fehlers bei einer Verbindung mit der falschen Authentifizierungsquelle
 <img width="1894" height="1244" alt="image" src="https://github.com/user-attachments/assets/3afbb9b0-d7f9-4f24-968e-c4815d3db876" />
 
-<img width="900" height="748" alt="image" src="https://github.com/user-attachments/assets/9e98e1ec-6997-40ee-bffb-0cf5d47325c7" />
-
-
+#### Erstellen Sie zwei neue Benutzer mit folgenden Bedingungen für Ihre Themendatenbank:
+#### Verwenden Sie für beide Benutzer built-in Rollen, aber keine, die any im Namen hat (z.B. readWriteAnyDatabase, readAnyDatabase)
+#### Benutzer 1 darf Daten nur lesen. Authentifizierungsdatenbank ist Ihre Themendatenbank.
+#### Benutzer 2 darf Daten lesen und schreiben. Authentifizierungsdatenbank ist admin.
 
 <img width="884" height="726" alt="image" src="https://github.com/user-attachments/assets/7d2e8490-9f7d-4205-97b5-93596d8c5417" />
+
+
+
+Screenshots, die zeigen, dass die Rechte für Benutzer 1 funktionieren, im Speziellen:
+Screenshot für das Einloggen (Verbindungstext sichtbar)
+Screenshot für das Lesen von Daten ohne Fehler
+Screenshot für das Schreiben von Daten mit Fehler.
 
 <img width="2084" height="1192" alt="image" src="https://github.com/user-attachments/assets/4ae8c77e-d898-45f8-bd8c-a7c08f89f3f0" />
 
 <img width="2000" height="1148" alt="image" src="https://github.com/user-attachments/assets/85f2c780-748c-4c66-990d-d454856426b3" />
+
+Screenshots, die zeigen, dass die Rechte für Benutzer 2 funktionieren, im Speziellen:
+Screenshot für das Einloggen (Verbindungstext sichtbar)
+Screenshot für das Lesen von Daten ohne Fehler
+Screenshot für das Schreiben von Daten ohne Fehler.
+
+
 
 <img width="2500" height="1344" alt="image" src="https://github.com/user-attachments/assets/9f1f05bd-9f5a-484f-9333-2b75682c1cb4" />
 
