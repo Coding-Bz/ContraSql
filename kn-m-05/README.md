@@ -42,12 +42,33 @@ Screenshot für das Schreiben von Daten ohne Fehler.
 
 ### Backup Variante 1
 
-<img width="2508" height="1002" alt="image" src="https://github.com/user-attachments/assets/6c03db2c-ea0d-415a-8c74-39c2c42feb91" />
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/a3a38874-c424-4b67-b52d-7e67df5f6efb" />
 
-<img width="558" height="358" alt="image" src="https://github.com/user-attachments/assets/1ef60846-4b0a-4f8a-9f81-af3a74ada76d" />
+<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/52f9ab81-8dda-4fce-bd5b-7852fade4c2d" />
 
-<img width="528" height="430" alt="image" src="https://github.com/user-attachments/assets/05808414-9e35-4d35-824e-5ec6231bf3f1" />
+<img width="578" height="588" alt="image" src="https://github.com/user-attachments/assets/125c9274-0b86-4760-a50e-9c6587c6f0f6" />
 
-<img width="1862" height="1322" alt="image" src="https://github.com/user-attachments/assets/a4cb4b8c-4d98-4541-947f-2527b262a1cb" />
+<img width="2558" height="1556" alt="image" src="https://github.com/user-attachments/assets/6564c79f-a0c2-48f8-a6bd-a47cdfa9c3e2" />
 
-<img width="2548" height="1048" alt="image" src="https://github.com/user-attachments/assets/3d1fe421-ddf2-4ab3-87df-9cee299f0543" />
+<img width="2560" height="1190" alt="image" src="https://github.com/user-attachments/assets/ea957c0d-01f9-4b16-ae90-2e78fe5cf97a" />
+
+### Backup Variante 2
+
+<img width="2382" height="126" alt="image" src="https://github.com/user-attachments/assets/876a783c-fe64-41e1-9436-5a1de2404a6a" />
+
+<img width="830" height="528" alt="image" src="https://github.com/user-attachments/assets/9e53020a-e427-4c00-a7b0-243d674f190d" />
+
+<img width="2304" height="468" alt="image" src="https://github.com/user-attachments/assets/9c41c6a4-b854-4f01-b047-1bfdb1cc8175" />
+
+<img width="2152" height="1120" alt="image" src="https://github.com/user-attachments/assets/ee5d312a-ba32-47e7-9d71-69efda8d413a" />
+
+<img width="2158" height="942" alt="image" src="https://github.com/user-attachments/assets/bd34ee1a-31a9-4d15-a813-4a1117c3f4df" />
+
+<img width="692" height="236" alt="image" src="https://github.com/user-attachments/assets/e3451f8e-96d1-44f7-b147-b940b8629453" />
+
+<img width="2304" height="220" alt="image" src="https://github.com/user-attachments/assets/2171fbc7-aac3-4d07-b251-af04c6049f71" />
+
+<img width="2280" height="702" alt="image" src="https://github.com/user-attachments/assets/516687f8-cdc0-47a6-be45-7e5d239d2b7b" />
+
+
+
