@@ -38,5 +38,16 @@ Screenshot für das Schreiben von Daten ohne Fehler.
 
 <img width="1508" height="206" alt="image" src="https://github.com/user-attachments/assets/04bb3b33-5626-4e0f-826e-2609153ef02f" />
 
+## B) Backup und Restore (40%)
 
+### Backup Variante 1
 
+<img width="2508" height="1002" alt="image" src="https://github.com/user-attachments/assets/6c03db2c-ea0d-415a-8c74-39c2c42feb91" />
+
+<img width="558" height="358" alt="image" src="https://github.com/user-attachments/assets/1ef60846-4b0a-4f8a-9f81-af3a74ada76d" />
+
+<img width="528" height="430" alt="image" src="https://github.com/user-attachments/assets/05808414-9e35-4d35-824e-5ec6231bf3f1" />
+
+<img width="1862" height="1322" alt="image" src="https://github.com/user-attachments/assets/a4cb4b8c-4d98-4541-947f-2527b262a1cb" />
+
+<img width="2548" height="1048" alt="image" src="https://github.com/user-attachments/assets/3d1fe421-ddf2-4ab3-87df-9cee299f0543" />
