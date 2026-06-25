@@ -1,0 +1,26 @@
+#cloud-config
+# https://www.techrepublic.com/article/how-to-install-neo4j-ubuntu-server/
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxChxS0lhne0FLKxrLASMUe80bI4VDyn5yW1fFcPiSINIB96yfB8tza/Wnsx/o+70gR0FdBmVQrXOQ2vP2BYsNUFRnXrIqAv0OkkDF00E4eMPNAsBA+azjVFdvY9St79apnXCKglUqSMittv9sZ++/4BZghnoxdxnPrd11Jl46cqH0CZhBERuPhC3RSESkh2E3XvzajXa8rYIPF1bIsrODHiD+VbjIFgGTTeQBFRsyY+UjKHuogjyCYdMIn74EJuqvFaeNnDnnvgO3mflWJsfKa2bV3/X5eNHY8ZuLBg4mDD5Aj+AelrEXF3G8xQruHvwMg/Ic0B0Z7qbH3VBn46A7
+ssh_pwauth: false
+disable_root: false    
+package_update: true 
+packages:
+  - unzip
+  - gnupg
+  - curl
+runcmd:
+  - curl -fsSL https://debian.neo4j.com/neotechnology.gpg.key |sudo gpg --dearmor -o /usr/share/keyrings/neo4j.gpg
+  - echo "deb [signed-by=/usr/share/keyrings/neo4j.gpg] https://debian.neo4j.com stable latest" | sudo tee -a /etc/apt/sources.list.d/neo4j.list
+  - sudo apt-get update -y
+  - sudo apt install neo4j -y
+  - sudo systemctl enable neo4j.service
+  - sudo systemctl start neo4j.service
+  - sudo sed -i 's/#server.default_listen_address/server.default_listen_address/g' /etc/neo4j/neo4j.conf
+  - sudo systemctl restart neo4j.service
+# default username and password are "neo4j" (without the quotes)

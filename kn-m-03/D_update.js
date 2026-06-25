@@ -1,6 +1,5 @@
 load("A_insert.js")
 
-// updateOne: Germany's population und inflation mit _id filtern
 db.country.updateOne(
   {
     "_id": country[0]
@@ -13,8 +12,6 @@ db.country.updateOne(
   }
 )
 
-// updateMany: Alle Strategies mit Expansionary oder Reformatory direction UND budget < 10M -> Moderate
-// Verwendet OR-Verknüpfung, kein _id, trifft mehrere Datensätze
 db.strategy.updateMany(
   {
     "$or": [
@@ -30,7 +27,6 @@ db.strategy.updateMany(
   }
 )
 
-// replaceOne: strategy_effect für GDP Growth komplett ersetzen
 db.strategy_effect.replaceOne(
   {
     "indicator_type": "GDP Growth"
@@ -44,7 +40,6 @@ db.strategy_effect.replaceOne(
   }
 )
 
-// Kontrolle: Ergebnisse anzeigen
 db.country.find({ "name": "Germany" })
 db.strategy.find()
 db.strategy_effect.find()
