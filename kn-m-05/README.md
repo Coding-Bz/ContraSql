@@ -1,0 +1,82 @@
+# KN-M-05: Administration von MongoDB
+
+## A) Rechte und Rollen (40%)
+
+#### Ändern Sie den Verbindungstext und versuchen Sie als authSource eine andere Datenbank als admin anzugeben (aber eine existierende). Zeigen Sie so, dass der Zugriff nicht mehr funktioniert.
+#### Screenshot des Fehlers bei einer Verbindung mit der falschen Authentifizierungsquelle
+<img width="1894" height="1244" alt="image" src="https://github.com/user-attachments/assets/3afbb9b0-d7f9-4f24-968e-c4815d3db876" />
+
+#### Erstellen Sie zwei neue Benutzer mit folgenden Bedingungen für Ihre Themendatenbank:
+#### Verwenden Sie für beide Benutzer built-in Rollen, aber keine, die any im Namen hat (z.B. readWriteAnyDatabase, readAnyDatabase)
+#### Benutzer 1 darf Daten nur lesen. Authentifizierungsdatenbank ist Ihre Themendatenbank.
+#### Benutzer 2 darf Daten lesen und schreiben. Authentifizierungsdatenbank ist admin.
+
+<img width="884" height="726" alt="image" src="https://github.com/user-attachments/assets/7d2e8490-9f7d-4205-97b5-93596d8c5417" />
+
+
+
+Screenshots, die zeigen, dass die Rechte für Benutzer 1 funktionieren, im Speziellen:
+Screenshot für das Einloggen (Verbindungstext sichtbar)
+Screenshot für das Lesen von Daten ohne Fehler
+Screenshot für das Schreiben von Daten mit Fehler.
+
+<img width="2084" height="1192" alt="image" src="https://github.com/user-attachments/assets/4ae8c77e-d898-45f8-bd8c-a7c08f89f3f0" />
+
+<img width="2000" height="1148" alt="image" src="https://github.com/user-attachments/assets/85f2c780-748c-4c66-990d-d454856426b3" />
+
+Screenshots, die zeigen, dass die Rechte für Benutzer 2 funktionieren, im Speziellen:
+Screenshot für das Einloggen (Verbindungstext sichtbar)
+Screenshot für das Lesen von Daten ohne Fehler
+Screenshot für das Schreiben von Daten ohne Fehler.
+
+
+<img width="2500" height="1344" alt="image" src="https://github.com/user-attachments/assets/9f1f05bd-9f5a-484f-9333-2b75682c1cb4" />
+
+<img width="1968" height="1314" alt="image" src="https://github.com/user-attachments/assets/014cb172-7600-49f1-8ba2-bee68c23207f" />
+
+<img width="2172" height="1238" alt="image" src="https://github.com/user-attachments/assets/537ae178-a358-47eb-bdde-cd51e91c0152" />
+
+<img width="1508" height="206" alt="image" src="https://github.com/user-attachments/assets/04bb3b33-5626-4e0f-826e-2609153ef02f" />
+
+## B) Backup und Restore (40%)
+
+### Backup Variante 1
+
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/a3a38874-c424-4b67-b52d-7e67df5f6efb" />
+
+<img width="2560" height="1392" alt="image" src="https://github.com/user-attachments/assets/52f9ab81-8dda-4fce-bd5b-7852fade4c2d" />
+
+<img width="578" height="588" alt="image" src="https://github.com/user-attachments/assets/125c9274-0b86-4760-a50e-9c6587c6f0f6" />
+
+<img width="2558" height="1556" alt="image" src="https://github.com/user-attachments/assets/6564c79f-a0c2-48f8-a6bd-a47cdfa9c3e2" />
+
+<img width="2560" height="1190" alt="image" src="https://github.com/user-attachments/assets/ea957c0d-01f9-4b16-ae90-2e78fe5cf97a" />
+
+### Backup Variante 2
+
+<img width="2382" height="126" alt="image" src="https://github.com/user-attachments/assets/876a783c-fe64-41e1-9436-5a1de2404a6a" />
+
+<img width="830" height="528" alt="image" src="https://github.com/user-attachments/assets/9e53020a-e427-4c00-a7b0-243d674f190d" />
+
+<img width="2304" height="468" alt="image" src="https://github.com/user-attachments/assets/9c41c6a4-b854-4f01-b047-1bfdb1cc8175" />
+
+<img width="2152" height="1120" alt="image" src="https://github.com/user-attachments/assets/ee5d312a-ba32-47e7-9d71-69efda8d413a" />
+
+<img width="2158" height="942" alt="image" src="https://github.com/user-attachments/assets/bd34ee1a-31a9-4d15-a813-4a1117c3f4df" />
+
+<img width="692" height="236" alt="image" src="https://github.com/user-attachments/assets/e3451f8e-96d1-44f7-b147-b940b8629453" />
+
+<img width="2304" height="220" alt="image" src="https://github.com/user-attachments/assets/2171fbc7-aac3-4d07-b251-af04c6049f71" />
+
+<img width="2280" height="702" alt="image" src="https://github.com/user-attachments/assets/516687f8-cdc0-47a6-be45-7e5d239d2b7b" />
+
+
+## C) Skalierung (20%)
+
+Kurz gesagt: Bei der Replikation kopiert man Daten für mehr Sicherheit und Verfügbarkeit. Beim Sharding (Partitionierung) zerlegt man Daten, um mehr Speicherplatz und Leistung zu erhalten.
+
+https://fizalihsan.github.io/technology/distributedcomputing.html
+<img width="426" height="456" alt="image" src="https://github.com/user-attachments/assets/b3286497-e2c1-4f0d-a612-8bf69a0f5a3d" />
+
+Da ich bei Google arbeite und die Daten Menge in Vergleich zu anderen Unternehmen viel grösser ist ist es nicht möglich eine durchschnittliche Kösung zu empfehlen und auserdem für all das hat Google aus Sicherheitsgründen eigene Dienste. Also meiner Meinung nach sollte dies auch so bleiben um die Daten so gut wie möglich zu beschützen.
+
