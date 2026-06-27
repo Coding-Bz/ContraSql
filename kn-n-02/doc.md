@@ -2,7 +2,7 @@
 
 ## A) Daten hinzufügen (20%)
 
-<img width="2558" height="1502" alt="image" src="https://github.com/user-attachments/assets/57ebced6-c7ad-413c-b460-1cca1acebc14" />
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/57ebced6-c7ad-413c-b460-1cca1acebc14" />
 
 ## B) Daten abfragen (20%)
 
