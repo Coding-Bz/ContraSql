@@ -2,6 +2,8 @@
 
 ## A) Installation / Account erstellen
 
+<img width="2558" height="1422" alt="image" src="https://github.com/user-attachments/assets/29d1fded-00a1-4a82-86fb-7f877a4b0013" />
+
 <img width="2090" height="1176" alt="image" src="https://github.com/user-attachments/assets/cc11e63a-49e0-4d8a-a1a3-99eb11af6a1b" />
 
 ## B) Logisches Modell für Neo4j (70%)
@@ -9,7 +11,6 @@
 <img width="966" height="1068" alt="image" src="https://github.com/user-attachments/assets/8765a15a-090a-4fc4-9da0-6e41aaea7a99" />
 
 ### Erklärung
-
 
 + Die Felder mit den IDs braucht es nicht mehr
 + Statt eine einzelne Noten Tabelle zu haben, speichere ich die Note in der Verbindung
