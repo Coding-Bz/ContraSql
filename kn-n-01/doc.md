@@ -2,7 +2,9 @@
 
 ## A) Installation / Account erstellen
 
-<img width="2540" height="1480" alt="image" src="https://github.com/user-attachments/assets/6751bb18-3334-4911-8e78-5675f2f0aed6" />
+<img width="2560" height="1516" alt="image" src="https://github.com/user-attachments/assets/85c121ad-13cd-476b-a712-c703594ff137" />
+
+<img width="2560" height="1356" alt="image" src="https://github.com/user-attachments/assets/934c9ea3-66a5-4771-9a85-4264d7b0fe68" />
 
 <img width="2558" height="1422" alt="image" src="https://github.com/user-attachments/assets/29d1fded-00a1-4a82-86fb-7f877a4b0013" />
 
