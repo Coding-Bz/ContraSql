@@ -45,3 +45,24 @@ RETURN p.name AS Policy, s.name AS Strategy, e.indicator_type AS Indicator, e.im
 RETURN p.type AS PolicyType, count(s) AS NumberOfStrategies, avg(s.budget) AS AverageBudget`
 ``
 <img width="30%" height="30%" alt="image" src="https://github.com/user-attachments/assets/24271b3c-a0ef-4983-b18d-f30445d979af" />
+
+
+## C) Daten löschen (20% - DETACH-Option)
+
+### Vorher (Ich habes es bewusst im hirachie-format angezeigt, da man sonst kaum etwas lesen kann)
+
+`MATCH (c:Country {name: 'Japan'})
+DELETE c`
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/26146379-00b8-43ef-aead-d6744e011e5d" />
+
+### Nachher ohne Detach
+`MATCH (c:Country {name: 'Japan'})
+DELETE c`
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/d5917bcc-1a0d-4fa9-919f-77ebe5b1fb29" />
+
+### Nachher mit Detach
+`MATCH (c:Country {name: 'Japan'})
+DETACH DELETE c`
+
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/2a23ca51-2b9b-4510-ae8c-f14ee2ef4af3" />
+
