@@ -32,7 +32,8 @@ RETURN s.name, s.budget, e.indicator_type, e.impact`
 
 `MATCH (p:Policy {name: 'Green Transition Act'})<-[:IMPLEMENTS]-(s:Strategy)-[:HAS]->(e:Strategy_Effect)
 RETURN p.name AS Policy, s.name AS Strategy, e.indicator_type AS Indicator, e.impact AS Impact`
-<img width="30%" height="30%" alt="image" src="https://github.com/user-attachments/assets/702fa5bf-9c01-448b-b4b2-0313b3db4f3e" />
+
+<img width="35%" height="35%" alt="image" src="https://github.com/user-attachments/assets/702fa5bf-9c01-448b-b4b2-0313b3db4f3e" />
 
 ### Prosa: Wir möchten berechnen, wie viel Budget im Durchschnitt für Strategien ausgegeben wird, aufgeteilt nach dem übergeordneten Richtlinientyp (z.B. 'Environmental' vs 'Technology').
 
