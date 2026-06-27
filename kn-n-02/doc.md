@@ -68,3 +68,52 @@ DETACH DELETE c`
 
 <img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/6f07e1b6-f71b-4e3e-870b-386f286586fc" />
 
+## D) Daten verändern (20%)
+
+### Prosa: Aufgrund erhöhter Inflation muss das Budget für die Strategie 'Renewable Subsidies' um 1,5 Milliarden aufgestockt werden.
+
+`MATCH (s:Strategy {name: 'Renewable Subsidies'})
+SET s.budget = s.budget + 1500000000.0
+RETURN s.name, s.budget`
+
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/082dbcfa-1ae1-4ad9-8bc8-a9d8998eab21" />
+
+### Prosa: Die Wirtschaftsdaten von Brasilien für das Jahr 2026 wurden offiziell verifiziert. Das confidence_level der Beziehung muss von 'Low' auf 'High' gesetzt werden.
+
+`MATCH (c:Country {name: 'Brazil'})-[r:APPLIES]->(s:Strategy {name: 'Renewable Subsidies'})
+SET r.confidence_level = 'High'
+RETURN c.name, r.confidence_level, s.name`
+
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/ac24d44e-470e-4f4d-92c1-199bdb5f4343" />
+
+
+### Prosa: Für alle Effekte, die einen 'Negative' Impact haben, wollen wir ein zusätzliches Warn-Flag requires_review = true setzen.
+
+`MATCH (e:Strategy_Effect)
+WHERE e.impact = 'Negative'
+SET e.requires_review = true
+RETURN e.indicator_type, e.impact, e.requires_review`
+
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/69981e3d-25d3-4b4a-a554-24da83605106" />
+
+## E) Zusätzliche Klauseln (20%)
+
+### Klausel 1: ORDER BY mit LIMIT: ORDER BY sortiert die Ergebnismenge basierend auf einem Attribut (auf- oder absteigend mit DESC). In Kombination mit LIMIT kann man die Ausgabe auf eine feste Anzahl beschränken.
+
+`MATCH (s:Strategy)
+RETURN s.name, s.budget
+ORDER BY s.budget DESC
+LIMIT 2`
+
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/0d6ec001-d7f7-4eae-8062-3946e8d4eb77" />
+
+### Klausel 2: MERGE: MERGE ist eine Mischung aus MATCH und CREATE ("Upsert"). Es prüft, ob ein Knoten oder eine Kante mit exakt diesen Eigenschaften bereits existiert. Wenn ja, zieht es den bestehenden heran (Match). Wenn nein, erstellt es ihn neu (Create). Das verhindert doppelte Daten.
+
+`MERGE (c:Country {name: 'Switzerland', iso_code: 'CH'})
+ON CREATE SET c.continent = 'Europe', c.population = 89000000
+ON MATCH SET c.last_checked = '2026-06-27'
+RETURN c`
+
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/72646a3c-dd63-4e43-9c48-dd93cb790617" />
+
+
