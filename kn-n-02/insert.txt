@@ -1,0 +1,35 @@
+CREATE (c1:Country {name: 'Germany', iso_code: 'DE', continent: 'Europe', population: 84000000, currency: 'EUR'})
+CREATE (c2:Country {name: 'United States', iso_code: 'US', continent: 'North America', population: 333000000, currency: 'USD'})
+CREATE (c3:Country {name: 'Japan', iso_code: 'JP', continent: 'Asia', population: 125000000, currency: 'JPY'})
+CREATE (c4:Country {name: 'Brazil', iso_code: 'BR', continent: 'South America', population: 214000000, currency: 'BRL'})
+
+CREATE (p1:Policy {name: 'Green Transition Act', type: 'Environmental', description: 'Rules for reducing carbon emissions'})
+CREATE (p2:Policy {name: 'Tech Innovation Framework', type: 'Technology', description: 'Subsidies and regulations for AI and chips'})
+CREATE (p3:Policy {name: 'Fiscal Stability Plan', type: 'Economic', description: 'Measures to control inflation and national debt'})
+
+CREATE (s1:Strategy {name: 'Renewable Subsidies', authority: 'Ministry of Economy', description: 'Financial support for solar and wind energy', budget: 5000000000.0, direction: 'Expansion', start_year: 2022, end_year: 2030})
+CREATE (s2:Strategy {name: 'AI Research Grants', authority: 'Federal Tech Bureau', description: 'Funding for university AI clusters', budget: 1200000000.0, direction: 'Innovation', start_year: 2024, end_year: 2028})
+CREATE (s3:Strategy {name: 'Interest Rate Hikes', authority: 'Central Bank', description: 'Tightening monetary policy to cool down the economy', budget: 0.0, direction: 'Stabilization', start_year: 2023, end_year: 2026})
+CREATE (s4:Strategy {name: 'EV Tax Credits', authority: 'Tax Authority', description: 'Tax cuts for buying electric vehicles', budget: 2500000000.0, direction: 'Expansion', start_year: 2021, end_year: 2025})
+
+CREATE (e1:Strategy_Effect {indicator_type: 'CO2 Reduction', impact: 'Positive', description: 'Emissions dropped by 5% in the first year'})
+CREATE (e2:Strategy_Effect {indicator_type: 'Inflation Rate', impact: 'Positive', description: 'Inflation decreased from 8% to 3%'})
+CREATE (e3:Strategy_Effect {indicator_type: 'GDP Growth', impact: 'Negative', description: 'High interest rates slightly slowed down GDP growth'})
+CREATE (e4:Strategy_Effect {indicator_type: 'Patent Registrations', impact: 'Highly Positive', description: 'AI patents increased by 40%'})
+
+CREATE (s1)-[:IMPLEMENTS]->(p1)
+CREATE (s4)-[:IMPLEMENTS]->(p1)
+CREATE (s2)-[:IMPLEMENTS]->(p2)
+CREATE (s3)-[:IMPLEMENTS]->(p3)
+
+CREATE (s1)-[:HAS]->(e1)
+CREATE (s3)-[:HAS]->(e2)
+CREATE (s3)-[:HAS]->(e3)
+CREATE (s2)-[:HAS]->(e4)
+
+CREATE (c1)-[:APPLIES {measured_year: 2024, confidence_level: 'High'}]->(s1)
+CREATE (c1)-[:APPLIES {measured_year: 2025, confidence_level: 'Medium'}]->(s4)
+CREATE (c2)-[:APPLIES {measured_year: 2024, confidence_level: 'High'}]->(s2)
+CREATE (c2)-[:APPLIES {measured_year: 2025, confidence_level: 'High'}]->(s4)
+CREATE (c3)-[:APPLIES {measured_year: 2023, confidence_level: 'High'}]->(s3)
+CREATE (c4)-[:APPLIES {measured_year: 2026, confidence_level: 'Low'}]->(s1);
