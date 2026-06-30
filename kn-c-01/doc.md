@@ -41,10 +41,19 @@ Clustering Key: indicator_type (Sortiert die verschiedenen Effekttypen).
 
 # C) Physisches Modell für Cassandra (50%)
 
+<img width="1692" height="948" alt="image" src="https://github.com/user-attachments/assets/b03941fe-5e9e-4856-943d-df3487dc962d" />
 
-<img width="2560" height="1414" alt="image" src="https://github.com/user-attachments/assets/a1617b05-efe0-4eb4-a24e-a532b6a6171f" />
+<img width="1804" height="1186" alt="image" src="https://github.com/user-attachments/assets/7f083037-7ac2-4906-9b40-a995eaa9448d" />
 
-<img width="2560" height="1400" alt="image" src="https://github.com/user-attachments/assets/ee5a92a1-bc88-4097-8ac0-56f684d2786f" />
+<img width="2346" height="1058" alt="image" src="https://github.com/user-attachments/assets/86b0479d-d962-4541-bab1-0815a7b2b757" />
 
-<img width="2560" height="1250" alt="image" src="https://github.com/user-attachments/assets/952f9899-43c3-41af-b2c5-57f4fa654dc4" />
+<img width="2326" height="1208" alt="image" src="https://github.com/user-attachments/assets/1a02e082-c31e-4a9c-a0be-692deff4f4fb" />
+
+<img width="2304" height="1218" alt="image" src="https://github.com/user-attachments/assets/f0e6a654-6de5-4e3f-9b48-3b7975deae0d" />
+
+<img width="2320" height="834" alt="image" src="https://github.com/user-attachments/assets/5cc96681-5f30-4db1-b5d3-c543c4a17222" />
+
+
+
+
 
