@@ -10,6 +10,9 @@
 
 ## B) Logisches Modell für Cassandra (40%)
 
+<img width="1054" height="924" alt="image" src="https://github.com/user-attachments/assets/af52a603-076a-4bc7-9c18-574e1818ead0" />
+
+
 1. Screen-Szenarien und Datenanforderungen
 Screen 1: Länder-Dashboard (Strategien nach Land)
 
